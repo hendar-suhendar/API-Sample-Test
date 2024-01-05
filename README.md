@@ -5,6 +5,9 @@
 **After Running Test**
 <img width="960" alt="After Running" src="https://github.com/hendar-suhendar/API-Sample-Test/assets/99055058/2674ae11-8a26-4348-b0ce-c5ef92fe498d">
 
+PDF Report After Regression Test -20240105_145339
+[PDF Report After Regression Test - 20240105_145339.pdf](https://github.com/hendar-suhendar/API-Sample-Test/files/13839723/PDF.Report.After.Regression.Test.-.20240105_145339.pdf)
+
 Menjalankan API sample Test automate
   1. buka katalon studio versi 8 atau yang terbaru
   2. Buka folder Test Suites
