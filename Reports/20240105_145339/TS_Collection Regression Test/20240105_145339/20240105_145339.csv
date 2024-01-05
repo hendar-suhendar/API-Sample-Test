@@ -1,0 +1,133 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Collection Regression Test,,,,2024-01-05 14:53:48,2024-01-05 14:54:42,54.363s,PASSED
+,,,,,,,
+Test Cases/Create User/Positive/TC1_Positive_Create User,,Verify create user using All mandatory input is successfully,,2024-01-05 14:53:49,2024-01-05 14:54:00,11.491s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC1_Positive_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:53:50,2024-01-05 14:53:59,9.254s,PASSED
+"verifyResponseStatusCode(response, 201, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:53:59,2024-01-05 14:53:59,0.099s,PASSED
+println(api_property.services.print_response_body(response)),,Menampilkan response API pada log console,,2024-01-05 14:53:59,2024-01-05 14:53:59,0.149s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""tonny"")",,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:53:59,2024-01-05 14:54:00,0.365s,PASSED
+"verifyElementPropertyValue(response, ""gender"", ""male"")",,,,2024-01-05 14:54:00,2024-01-05 14:54:00,0.129s,PASSED
+"verifyElementPropertyValue(response, ""email"", ""tonny@mail.com"")",,,,2024-01-05 14:54:00,2024-01-05 14:54:00,0.140s,PASSED
+"verifyElementPropertyValue(response, ""status"", ""active"")",,,,2024-01-05 14:54:00,2024-01-05 14:54:00,0.134s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC1_Negative_Create User,,Verify create user email input has existed is fail,,2024-01-05 14:54:00,2024-01-05 14:54:02,2.160s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC1_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:01,2024-01-05 14:54:02,1.238s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:02,2024-01-05 14:54:02,0.023s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:02,2024-01-05 14:54:02,0.004s,PASSED
+println(jsonString),,,,2024-01-05 14:54:02,2024-01-05 14:54:02,0.005s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""email"",""message"":""has already been taken""}]"")",,,,2024-01-05 14:54:02,2024-01-05 14:54:02,0.077s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC2_Negative_Create User,,Verify create user using incorrect format email input is fail,,2024-01-05 14:54:02,2024-01-05 14:54:05,2.247s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC2_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:03,2024-01-05 14:54:05,1.306s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:05,2024-01-05 14:54:05,0.001s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:05,2024-01-05 14:54:05,0.000s,PASSED
+println(jsonString),,,,2024-01-05 14:54:05,2024-01-05 14:54:05,0.000s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""email"",""message"":""is invalid""}]"")",,,,2024-01-05 14:54:05,2024-01-05 14:54:05,0.000s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC3_Negative_Create User,,Verify create user without mandatory input name is fail,,2024-01-05 14:54:05,2024-01-05 14:54:07,2.728s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC3_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:06,2024-01-05 14:54:07,1.524s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:07,2024-01-05 14:54:07,0.006s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:07,2024-01-05 14:54:07,0.001s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:07,2024-01-05 14:54:07,0.002s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""name"",""message"":""can't be blank""}]"")",,,,2024-01-05 14:54:07,2024-01-05 14:54:07,0.005s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC4_Negative_Create User,,Verify create user without mandatory input gender is fail,,2024-01-05 14:54:07,2024-01-05 14:54:10,2.833s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC4_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:08,2024-01-05 14:54:10,1.642s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:10,2024-01-05 14:54:10,0.015s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:10,2024-01-05 14:54:10,0.000s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:10,2024-01-05 14:54:10,0.016s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""gender"",""message"":""can't be blank, can be male of female""}]"")",,,,2024-01-05 14:54:10,2024-01-05 14:54:10,0.014s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC5_Negative_Create User,,Verify create user without mandatory input email is fail,,2024-01-05 14:54:10,2024-01-05 14:54:13,2.660s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC5_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:11,2024-01-05 14:54:13,1.452s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:13,2024-01-05 14:54:13,0.011s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:13,2024-01-05 14:54:13,0.000s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:13,2024-01-05 14:54:13,0.000s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""email"",""message"":""can't be blank""}]"")",,,,2024-01-05 14:54:13,2024-01-05 14:54:13,0.018s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC6_Negative_Create User,,Verify create user without mandatory input status is fail,,2024-01-05 14:54:13,2024-01-05 14:54:15,2.304s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC6_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:14,2024-01-05 14:54:15,1.367s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:15,2024-01-05 14:54:15,0.012s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:15,2024-01-05 14:54:15,0.000s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:15,2024-01-05 14:54:15,0.000s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""status"",""message"":""can't be blank""}]"")",,,,2024-01-05 14:54:15,2024-01-05 14:54:15,0.000s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC7_Negative_Create User,,Verify create user without all mandatory input is fail,,2024-01-05 14:54:15,2024-01-05 14:54:18,2.401s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC7_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:16,2024-01-05 14:54:18,1.403s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:18,2024-01-05 14:54:18,0.000s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:18,2024-01-05 14:54:18,0.000s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:18,2024-01-05 14:54:18,0.000s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""email"",""message"":""can't be blank""},{""field"":""name"",""message"":""can't be blank""},{""field"":""gender"",""message"":""can't be blank, can be male of female""},{""field"":""status"",""message"":""can't be blank""}]"")",,,,2024-01-05 14:54:18,2024-01-05 14:54:18,0.015s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC8_Negative_Create User,,Verify create user incorrect gender input is fail,,2024-01-05 14:54:18,2024-01-05 14:54:20,2.860s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC8_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:19,2024-01-05 14:54:20,1.749s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:20,2024-01-05 14:54:20,0.024s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:20,2024-01-05 14:54:20,0.004s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:20,2024-01-05 14:54:20,0.015s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""gender"",""message"":""can't be blank, can be male of female""}]"")",,,,2024-01-05 14:54:20,2024-01-05 14:54:20,0.003s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC9_Negative_Create User,,Verify create user incorrect status input is fail,,2024-01-05 14:54:20,2024-01-05 14:54:23,2.373s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC9_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:22,2024-01-05 14:54:23,1.292s,PASSED
+"verifyResponseStatusCode(response, 422, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:23,2024-01-05 14:54:23,0.004s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:23,2024-01-05 14:54:23,0.001s,PASSED
+"println(""'"" + jsonString + ""'"")",,,,2024-01-05 14:54:23,2024-01-05 14:54:23,0.002s,PASSED
+"verifyEqual(jsonString, ""[{""field"":""status"",""message"":""can't be blank""}]"")",,,,2024-01-05 14:54:23,2024-01-05 14:54:23,0.008s,PASSED
+,,,,,,,
+Test Cases/Create User/Negative/TC_10_Negative_Create User,,Verify create user using wrong API Token input is fail,,2024-01-05 14:54:23,2024-01-05 14:54:25,1.971s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Create User/TC10_Negative_Create User""))",,Mengirim permintaan untuk membuat user baru,,2024-01-05 14:54:24,2024-01-05 14:54:25,1.184s,PASSED
+"verifyResponseStatusCode(response, 401, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:25,2024-01-05 14:54:25,0.009s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:25,2024-01-05 14:54:25,0.002s,PASSED
+println(jsonString),,,,2024-01-05 14:54:25,2024-01-05 14:54:25,0.002s,PASSED
+"verifyEqual(jsonString, ""{""message"":""Invalid token""}"")",,,,2024-01-05 14:54:25,2024-01-05 14:54:25,0.009s,PASSED
+,,,,,,,
+Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail,,Verify read user detail using ID input is successful,,2024-01-05 14:54:25,2024-01-05 14:54:28,3.302s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Read User Detail/TC1_Positive_Read User Detail""))",,Mengirim permintaan untuk mendampilkan detail user berdasrkan ID,,2024-01-05 14:54:26,2024-01-05 14:54:28,2.043s,PASSED
+"verifyResponseStatusCode(response, 200, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.010s,PASSED
+println(api_property.services.print_response_body(response)),,Menampilkan response API pada log console,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.016s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""5892652"")",,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.060s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""ibnu musa"")",,,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.059s,PASSED
+"verifyElementPropertyValue(response, ""gender"", ""male"")",,,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.101s,PASSED
+"verifyElementPropertyValue(response, ""email"", ""ibnu@mail.com"")",,,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.082s,PASSED
+"verifyElementPropertyValue(response, ""status"", ""active"")",,,,2024-01-05 14:54:28,2024-01-05 14:54:28,0.056s,PASSED
+,,,,,,,
+Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail,,Verify read user detail using incoorect ID input is fail,,2024-01-05 14:54:28,2024-01-05 14:54:30,2.283s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Gorest/Read User Detail/TC1_Negative_Read User Detail""))",,Mengirim permintaan untuk mendampilkan detail user berdasrkan ID,,2024-01-05 14:54:29,2024-01-05 14:54:30,1.229s,PASSED
+"verifyResponseStatusCode(response, 404, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:30,2024-01-05 14:54:30,0.009s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:30,2024-01-05 14:54:30,0.003s,PASSED
+println(jsonString),,,,2024-01-05 14:54:30,2024-01-05 14:54:30,0.002s,PASSED
+"verifyEqual(jsonString, ""{""message"":""Resource not found""}"")",,,,2024-01-05 14:54:30,2024-01-05 14:54:30,0.008s,PASSED
+,,,,,,,
+Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail,,Verify read user detail using wrong API Token input is fail,,2024-01-05 14:54:30,2024-01-05 14:54:33,2.253s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Read User Detail/TC2_Negative_Read User Detail""))",,Mengirim permintaan untuk mendampilkan detail user berdasrkan ID,,2024-01-05 14:54:31,2024-01-05 14:54:33,1.280s,PASSED
+"verifyResponseStatusCode(response, 401, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:33,2024-01-05 14:54:33,0.009s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:33,2024-01-05 14:54:33,0.003s,PASSED
+println(jsonString),,,,2024-01-05 14:54:33,2024-01-05 14:54:33,0.004s,PASSED
+"verifyEqual(jsonString, ""{""message"":""Invalid token""}"")",,,,2024-01-05 14:54:33,2024-01-05 14:54:33,0.013s,PASSED
+,,,,,,,
+Test Cases/Update User/Positive/TC1_Positive_Update User Data,,Verify update user with ID input is successful,,2024-01-05 14:54:33,2024-01-05 14:54:36,2.870s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Update User/TC1_Positive_Update User Data""))",,Mengirim permintaan untuk update data user berdasrkan ID,,2024-01-05 14:54:34,2024-01-05 14:54:35,1.586s,PASSED
+"verifyResponseStatusCode(response, 200, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.008s,PASSED
+println(api_property.services.print_response_body(response)),,Menampilkan response API pada log console,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.005s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""5894041"")",,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.058s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""Tonny Stark"")",,,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.056s,PASSED
+"verifyElementPropertyValue(response, ""gender"", ""male"")",,,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.055s,PASSED
+"verifyElementPropertyValue(response, ""email"", ""Tonnystark@gmail.com"")",,,,2024-01-05 14:54:35,2024-01-05 14:54:35,0.066s,PASSED
+"verifyElementPropertyValue(response, ""status"", ""active"")",,,,2024-01-05 14:54:35,2024-01-05 14:54:36,0.139s,PASSED
+,,,,,,,
+Test Cases/Update User/Negative/TC1_Negative_Update User Data,,Verify update user using incoorect ID input is fail,,2024-01-05 14:54:36,2024-01-05 14:54:38,1.956s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Update User/TC1_Negative_Update User Data""))",,Mengirim permintaan untuk update data user berdasrkan ID,,2024-01-05 14:54:36,2024-01-05 14:54:38,1.095s,PASSED
+"verifyResponseStatusCode(response, 404, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:38,2024-01-05 14:54:38,0.011s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:38,2024-01-05 14:54:38,0.002s,PASSED
+println(jsonString),,,,2024-01-05 14:54:38,2024-01-05 14:54:38,0.004s,PASSED
+"verifyEqual(jsonString, ""{""message"":""Resource not found""}"")",,,,2024-01-05 14:54:38,2024-01-05 14:54:38,0.008s,PASSED
+,,,,,,,
+Test Cases/Update User/Negative/TC2_Negative_Update User Data,,Verify read user detail using wrong API Token input is fail,,2024-01-05 14:54:38,2024-01-05 14:54:40,2.191s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Update User/TC2_Negative_Update User Data""))",,Mengirim permintaan untuk update data user berdasrkan ID,,2024-01-05 14:54:38,2024-01-05 14:54:40,1.343s,PASSED
+"verifyResponseStatusCode(response, 401, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:40,2024-01-05 14:54:40,0.006s,PASSED
+jsonString = response.getResponseText(),,Memverifikasi data response telah sesuai atau tidak,,2024-01-05 14:54:40,2024-01-05 14:54:40,0.002s,PASSED
+println(jsonString),,,,2024-01-05 14:54:40,2024-01-05 14:54:40,0.002s,PASSED
+"verifyEqual(jsonString, ""{""message"":""Invalid token""}"")",,,,2024-01-05 14:54:40,2024-01-05 14:54:40,0.006s,PASSED
+,,,,,,,
+Test Cases/Delete User/Positive/TC1_Positive_Delete User Data,,Verify delete user using ID input is successful,,2024-01-05 14:54:40,2024-01-05 14:54:42,2.243s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/Gorest/Delete User/TC1_Positive_Delete User Data""))",,Mengirim permintaan untuk update data user berdasrkan ID,,2024-01-05 14:54:41,2024-01-05 14:54:42,1.370s,PASSED
+"verifyResponseStatusCode(response, 204, STOP_ON_FAILURE)",,Memverifikasi response status code telah sesuai atau tidak,,2024-01-05 14:54:42,2024-01-05 14:54:42,0.005s,PASSED

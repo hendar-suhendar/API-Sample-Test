@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify read user detail using incoorect ID input is fail</description>
+   <name>TC1_Negative_Read User Detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c3558aa1-dbf9-4ec1-8ea7-eaf3ca80aae3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "BB129C346F872F284337E74421A9F81C",
+  "keywordClasses": [
+    {
+      "name": "api_property.ConnectDB",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

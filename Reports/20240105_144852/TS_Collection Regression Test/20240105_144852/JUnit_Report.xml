@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Collection Regression Test" time="56.582" tests="18" failures="2" errors="0">
+   <testsuite name="TS_Collection Regression Test" tests="18" failures="2" errors="0" time="56.582" skipped="0" timestamp="2024-01-05 14:49:00" hostname="User - DESKTOP-NJRDPJK" id="Test Suites/TS_Collection Regression Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Test BNI\\Suhendar - BNI API Sample Test\\Suhendar-API Sample Test\\Reports\\20240105_144852\\TS_Collection Regression Test\\20240105_144852"/>
+         <property name="logFiles" value="D:\\Test BNI\\Suhendar - BNI API Sample Test\\Suhendar-API Sample Test\\Reports\\20240105_144852\\TS_Collection Regression Test\\20240105_144852\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-NJRDPJK"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Create User/Positive/TC1_Positive_Create User" time="13.211" classname="Test Cases/Create User/Positive/TC1_Positive_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:01 - [TEST_CASE][PASSED] - Test Cases/Create User/Positive/TC1_Positive_Create User: Test Cases/Create User/Positive/TC1_Positive_Create User
+
+2024-01-05 14:49:02 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC1_Positive_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:11 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\0.har
+
+2024-01-05 14:49:11 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:12 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:12 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:12 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:13 - [TEST_STEP][PASSED] - println(api_property.services.print_response_body(response)): api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "tonny"): Verify element property value successfully
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "gender", "male"): Verify element property value successfully
+
+2024-01-05 14:49:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "email", "tonny@mail.com"): Verify element property value successfully
+
+2024-01-05 14:49:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "status", "active"): Verify element property value successfully
+
+2024-01-05 14:49:14 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC1_Negative_Create User" time="2.747" classname="Test Cases/Create User/Negative/TC1_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:14 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC1_Negative_Create User: Test Cases/Create User/Negative/TC1_Negative_Create User
+
+2024-01-05 14:49:15 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC1_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:16 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\1.har
+
+2024-01-05 14:49:16 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:17 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:17 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:17 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"email","message":"has already been taken"}]"): Actual object '[{"field":"email","message":"has already been taken"}]' and expected object '[{"field":"email","message":"has already been taken"}]' are equal
+
+2024-01-05 14:49:17 - [MESSAGE][PASSED] - Actual object '[{"field":"email","message":"has already been taken"}]' and expected object '[{"field":"email","message":"has already been taken"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC2_Negative_Create User" time="2.636" classname="Test Cases/Create User/Negative/TC2_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:17 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC2_Negative_Create User: Test Cases/Create User/Negative/TC2_Negative_Create User
+
+2024-01-05 14:49:18 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC2_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:19 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\2.har
+
+2024-01-05 14:49:19 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:20 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:20 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:20 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:20 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"email","message":"is invalid"}]"): Actual object '[{"field":"email","message":"is invalid"}]' and expected object '[{"field":"email","message":"is invalid"}]' are equal
+
+2024-01-05 14:49:20 - [MESSAGE][PASSED] - Actual object '[{"field":"email","message":"is invalid"}]' and expected object '[{"field":"email","message":"is invalid"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC3_Negative_Create User" time="2.967" classname="Test Cases/Create User/Negative/TC3_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:20 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC3_Negative_Create User: Test Cases/Create User/Negative/TC3_Negative_Create User
+
+2024-01-05 14:49:21 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC3_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:22 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\3.har
+
+2024-01-05 14:49:22 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:23 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:23 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:23 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:23 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"name","message":"can't be blank"}]"): Actual object '[{"field":"name","message":"can't be blank"}]' and expected object '[{"field":"name","message":"can't be blank"}]' are equal
+
+2024-01-05 14:49:23 - [MESSAGE][PASSED] - Actual object '[{"field":"name","message":"can't be blank"}]' and expected object '[{"field":"name","message":"can't be blank"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC4_Negative_Create User" time="2.428" classname="Test Cases/Create User/Negative/TC4_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:23 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC4_Negative_Create User: Test Cases/Create User/Negative/TC4_Negative_Create User
+
+2024-01-05 14:49:24 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC4_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:25 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\4.har
+
+2024-01-05 14:49:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:25 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:25 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"gender","message":"can't be blank, can be male of female"}]"): Actual object '[{"field":"gender","message":"can't be blank, can be male of female"}]' and expected object '[{"field":"gender","message":"can't be blank, can be male of female"}]' are equal
+
+2024-01-05 14:49:25 - [MESSAGE][PASSED] - Actual object '[{"field":"gender","message":"can't be blank, can be male of female"}]' and expected object '[{"field":"gender","message":"can't be blank, can be male of female"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC5_Negative_Create User" time="3.341" classname="Test Cases/Create User/Negative/TC5_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:25 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC5_Negative_Create User: Test Cases/Create User/Negative/TC5_Negative_Create User
+
+2024-01-05 14:49:27 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC5_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:28 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\5.har
+
+2024-01-05 14:49:28 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:28 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:28 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:28 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:28 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:28 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:28 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:29 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:29 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"email","message":"can't be blank"}]"): Actual object '[{"field":"email","message":"can't be blank"}]' and expected object '[{"field":"email","message":"can't be blank"}]' are equal
+
+2024-01-05 14:49:29 - [MESSAGE][PASSED] - Actual object '[{"field":"email","message":"can't be blank"}]' and expected object '[{"field":"email","message":"can't be blank"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC6_Negative_Create User" time="2.215" classname="Test Cases/Create User/Negative/TC6_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:29 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC6_Negative_Create User: Test Cases/Create User/Negative/TC6_Negative_Create User
+
+2024-01-05 14:49:30 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC6_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:30 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\6.har
+
+2024-01-05 14:49:30 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:31 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:31 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:31 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:31 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"status","message":"can't be blank"}]"): Actual object '[{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"status","message":"can't be blank"}]' are equal
+
+2024-01-05 14:49:31 - [MESSAGE][PASSED] - Actual object '[{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"status","message":"can't be blank"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC7_Negative_Create User" time="2.601" classname="Test Cases/Create User/Negative/TC7_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:31 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC7_Negative_Create User: Test Cases/Create User/Negative/TC7_Negative_Create User
+
+2024-01-05 14:49:32 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC7_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:33 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\7.har
+
+2024-01-05 14:49:33 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:33 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:33 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:33 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:33 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]"): Actual object '[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]' are equal
+
+2024-01-05 14:49:33 - [MESSAGE][PASSED] - Actual object '[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC8_Negative_Create User" time="2.316" classname="Test Cases/Create User/Negative/TC8_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:33 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC8_Negative_Create User: Test Cases/Create User/Negative/TC8_Negative_Create User
+
+2024-01-05 14:49:34 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC8_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:35 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\8.har
+
+2024-01-05 14:49:35 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:36 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:36 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:36 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:36 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"gender","message":"can't be blank, can be male of female"}]"): Actual object '[{"field":"gender","message":"can't be blank, can be male of female"}]' and expected object '[{"field":"gender","message":"can't be blank, can be male of female"}]' are equal
+
+2024-01-05 14:49:36 - [MESSAGE][PASSED] - Actual object '[{"field":"gender","message":"can't be blank, can be male of female"}]' and expected object '[{"field":"gender","message":"can't be blank, can be male of female"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC9_Negative_Create User" time="2.137" classname="Test Cases/Create User/Negative/TC9_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:36 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC9_Negative_Create User: Test Cases/Create User/Negative/TC9_Negative_Create User
+
+2024-01-05 14:49:37 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC9_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:37 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\9.har
+
+2024-01-05 14:49:38 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:38 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:38 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:38 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 422, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - println("'" + jsonString + "'"): null
+
+2024-01-05 14:49:38 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "[{"field":"status","message":"can't be blank"}]"): Actual object '[{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"status","message":"can't be blank"}]' are equal
+
+2024-01-05 14:49:38 - [MESSAGE][PASSED] - Actual object '[{"field":"status","message":"can't be blank"}]' and expected object '[{"field":"status","message":"can't be blank"}]' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create User/Negative/TC_10_Negative_Create User" time="2.11" classname="Test Cases/Create User/Negative/TC_10_Negative_Create User" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:38 - [TEST_CASE][PASSED] - Test Cases/Create User/Negative/TC_10_Negative_Create User: Test Cases/Create User/Negative/TC_10_Negative_Create User
+
+2024-01-05 14:49:39 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Create User/TC10_Negative_Create User")): Send request and verify the response successfully
+
+2024-01-05 14:49:40 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\10.har
+
+2024-01-05 14:49:40 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:40 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:40 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:40 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 401, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:40 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "{"message":"Invalid token"}"): Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal
+
+2024-01-05 14:49:40 - [MESSAGE][PASSED] - Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail" time="2.723" classname="Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:40 - [TEST_CASE][PASSED] - Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail: Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail
+
+2024-01-05 14:49:41 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Read User Detail/TC1_Positive_Read User Detail")): Send request and verify the response successfully
+
+2024-01-05 14:49:42 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\11.har
+
+2024-01-05 14:49:42 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - println(api_property.services.print_response_body(response)): api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", "5892652"): Verify element property value successfully
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "ibnu musa"): Verify element property value successfully
+
+2024-01-05 14:49:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "gender", "male"): Verify element property value successfully
+
+2024-01-05 14:49:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "email", "ibnu@mail.com"): Verify element property value successfully
+
+2024-01-05 14:49:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2024-01-05 14:49:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "status", "active"): Verify element property value successfully
+
+2024-01-05 14:49:43 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail" time="2.484" classname="Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:43 - [TEST_CASE][PASSED] - Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail: Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail
+
+2024-01-05 14:49:44 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Gorest/Read User Detail/TC1_Negative_Read User Detail")): Send request and verify the response successfully
+
+2024-01-05 14:49:45 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\12.har
+
+2024-01-05 14:49:45 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:45 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:45 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 404, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:45 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "{"message":"Resource not found"}"): Actual object '{"message":"Resource not found"}' and expected object '{"message":"Resource not found"}' are equal
+
+2024-01-05 14:49:45 - [MESSAGE][PASSED] - Actual object '{"message":"Resource not found"}' and expected object '{"message":"Resource not found"}' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail" time="2.242" classname="Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:45 - [TEST_CASE][PASSED] - Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail: Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail
+
+2024-01-05 14:49:46 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Read User Detail/TC2_Negative_Read User Detail")): Send request and verify the response successfully
+
+2024-01-05 14:49:47 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\13.har
+
+2024-01-05 14:49:47 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:47 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:47 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:47 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 401, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:47 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "{"message":"Invalid token"}"): Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal
+
+2024-01-05 14:49:47 - [MESSAGE][PASSED] - Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Update User/Positive/TC1_Positive_Update User Data" time="2.249" classname="Test Cases/Update User/Positive/TC1_Positive_Update User Data" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Update User/Positive/TC1_Positive_Update User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+"/>
+         <system-out><![CDATA[2024-01-05 14:49:47 - [TEST_CASE][FAILED] - Test Cases/Update User/Positive/TC1_Positive_Update User Data: Test Cases/Update User/Positive/TC1_Positive_Update User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+
+
+2024-01-05 14:49:48 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Update User/TC1_Positive_Update User Data")): Send request and verify the response successfully
+
+2024-01-05 14:49:49 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\14.har
+
+2024-01-05 14:49:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:50 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:50 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:50 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:50 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:50 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:50 - [TEST_STEP][PASSED] - println(api_property.services.print_response_body(response)): api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:50 - [MESSAGE][PASSED] - api_property.services.print_response_body is PASSED
+
+2024-01-05 14:49:50 - [TEST_STEP][FAILED] - verifyElementPropertyValue(response, "id", "5892331"): Unable to verify element property value (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+)
+
+2024-01-05 14:49:50 - [MESSAGE][FAILED] - Expected element property value '5892331' is not equal with actual property value '5894041'
+
+2024-01-05 14:49:50 - [MESSAGE][FAILED] - Unable to verify element property value (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2024-01-05 14:49:47 - [TEST_CASE][FAILED] - Test Cases/Update User/Positive/TC1_Positive_Update User Data: Test Cases/Update User/Positive/TC1_Positive_Update User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Update User/Negative/TC1_Negative_Update User Data" time="2.583" classname="Test Cases/Update User/Negative/TC1_Negative_Update User Data" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:50 - [TEST_CASE][PASSED] - Test Cases/Update User/Negative/TC1_Negative_Update User Data: Test Cases/Update User/Negative/TC1_Negative_Update User Data
+
+2024-01-05 14:49:51 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Update User/TC1_Negative_Update User Data")): Send request and verify the response successfully
+
+2024-01-05 14:49:52 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\15.har
+
+2024-01-05 14:49:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:52 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:52 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:52 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 404, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:52 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "{"message":"Resource not found"}"): Actual object '{"message":"Resource not found"}' and expected object '{"message":"Resource not found"}' are equal
+
+2024-01-05 14:49:52 - [MESSAGE][PASSED] - Actual object '{"message":"Resource not found"}' and expected object '{"message":"Resource not found"}' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Update User/Negative/TC2_Negative_Update User Data" time="2.072" classname="Test Cases/Update User/Negative/TC2_Negative_Update User Data" status="PASSED">
+         <system-out><![CDATA[2024-01-05 14:49:52 - [TEST_CASE][PASSED] - Test Cases/Update User/Negative/TC2_Negative_Update User Data: Test Cases/Update User/Negative/TC2_Negative_Update User Data
+
+2024-01-05 14:49:53 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Update User/TC2_Negative_Update User Data")): Send request and verify the response successfully
+
+2024-01-05 14:49:54 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\16.har
+
+2024-01-05 14:49:54 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:54 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:54 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:54 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 401, STOP_ON_FAILURE): Verify response status code successfully
+
+2024-01-05 14:49:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - jsonString = response.getResponseText(): null
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - println(jsonString): null
+
+2024-01-05 14:49:54 - [TEST_STEP][PASSED] - verifyEqual(jsonString, "{"message":"Invalid token"}"): Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal
+
+2024-01-05 14:49:54 - [MESSAGE][PASSED] - Actual object '{"message":"Invalid token"}' and expected object '{"message":"Invalid token"}' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Delete User/Positive/TC1_Positive_Delete User Data" time="2.154" classname="Test Cases/Delete User/Positive/TC1_Positive_Delete User Data" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Delete User/Positive/TC1_Positive_Delete User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '204'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:331)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC1_Positive_Delete User Data.run(TC1_Positive_Delete User Data:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+"/>
+         <system-out><![CDATA[2024-01-05 14:49:54 - [TEST_CASE][FAILED] - Test Cases/Delete User/Positive/TC1_Positive_Delete User Data: Test Cases/Delete User/Positive/TC1_Positive_Delete User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '204'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:331)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC1_Positive_Delete User Data.run(TC1_Positive_Delete User Data:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+
+
+2024-01-05 14:49:55 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Object Repository/Gorest/Delete User/TC1_Positive_Delete User Data")): Send request and verify the response successfully
+
+2024-01-05 14:49:56 - [MESSAGE][INFO] - HAR: D:\Test BNI\Suhendar - BNI API Sample Test\Suhendar-API Sample Test\Reports\20240105_144852\TS_Collection Regression Test\20240105_144852\requests\main\17.har
+
+2024-01-05 14:49:56 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2024-01-05 14:49:57 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2024-01-05 14:49:57 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2024-01-05 14:49:57 - [MESSAGE][PASSED] - Verify response successfully
+
+2024-01-05 14:49:57 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2024-01-05 14:49:57 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2024-01-05 14:49:57 - [TEST_STEP][FAILED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '204'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:331)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC1_Positive_Delete User Data.run(TC1_Positive_Delete User Data:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+)
+
+2024-01-05 14:49:57 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '204'
+
+2024-01-05 14:49:57 - [MESSAGE][FAILED] - Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '204'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:331)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC1_Positive_Delete User Data.run(TC1_Positive_Delete User Data:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2024-01-05 14:49:54 - [TEST_CASE][FAILED] - Test Cases/Delete User/Positive/TC1_Positive_Delete User Data: Test Cases/Delete User/Positive/TC1_Positive_Delete User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '204'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:331)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC1_Positive_Delete User Data.run(TC1_Positive_Delete User Data:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2024-01-05 14:49:00 - [TEST_SUITE][FAILED] - TS_Collection Regression Test: Test Cases/Update User/Positive/TC1_Positive_Update User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)]]></system-out>
+      <system-err><![CDATA[2024-01-05 14:49:00 - [TEST_SUITE][FAILED] - TS_Collection Regression Test: Test Cases/Update User/Positive/TC1_Positive_Update User Data FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '5892331' is not equal with actual property value '5894041'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC1_Positive_Update User Data.run(TC1_Positive_Update User Data:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1704440932052.run(TempTestSuite1704440932052.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

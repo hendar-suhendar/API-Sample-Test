@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify create user without mandatory input email is fail</description>
+   <name>TC5_Negative_Create User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1bfc6f01-fa97-4b67-9fe4-91660b393ea6</testCaseGuid>
+</TestCaseEntity>

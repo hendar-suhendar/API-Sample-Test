@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify create user without all mandatory input is fail</description>
+   <name>TC7_Negative_Create User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>333db857-aae2-40ba-9389-f6b0e30be684</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify read user detail using wrong API Token input is fail</description>
+   <name>TC2_Negative_Update User Data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ceaa5e59-94c3-40bd-8771-8973f0ad6039</testCaseGuid>
+</TestCaseEntity>

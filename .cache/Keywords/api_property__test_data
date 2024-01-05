@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "E740945AE9FFF7FF0642AEEF15B5F288",
+  "keywordClasses": [
+    {
+      "name": "api_property.test_data",
+      "keywordMethods": [
+        {
+          "name": "setDefaultTestData",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

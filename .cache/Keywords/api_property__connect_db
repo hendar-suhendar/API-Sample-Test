@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "4B682BF62DAC5F30A03F0BDB619D30CD",
+  "keywordClasses": [
+    {
+      "name": "api_property.connect_db",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,18 @@
+{"testCaseName":"Test Cases/Create User/Positive/TC1_Positive_Create User","testCaseId":"Test Cases/Create User/Positive/TC1_Positive_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC1_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC1_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC2_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC2_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC3_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC3_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC4_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC4_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC5_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC5_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC6_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC6_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC7_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC7_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC8_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC8_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC9_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC9_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Create User/Negative/TC_10_Negative_Create User","testCaseId":"Test Cases/Create User/Negative/TC_10_Negative_Create User","iterationVariableName":""}
+{"testCaseName":"Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail","testCaseId":"Test Cases/Read User Detail/Positive/TC1_Positive_Read User Detail","iterationVariableName":""}
+{"testCaseName":"Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail","testCaseId":"Test Cases/Read User Detail/Negative/TC1_Negative_Read User Detail","iterationVariableName":""}
+{"testCaseName":"Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail","testCaseId":"Test Cases/Read User Detail/Negative/TC2_Negative_Read User Detail","iterationVariableName":""}
+{"testCaseName":"Test Cases/Update User/Positive/TC1_Positive_Update User Data","testCaseId":"Test Cases/Update User/Positive/TC1_Positive_Update User Data","iterationVariableName":""}
+{"testCaseName":"Test Cases/Update User/Negative/TC1_Negative_Update User Data","testCaseId":"Test Cases/Update User/Negative/TC1_Negative_Update User Data","iterationVariableName":""}
+{"testCaseName":"Test Cases/Update User/Negative/TC2_Negative_Update User Data","testCaseId":"Test Cases/Update User/Negative/TC2_Negative_Update User Data","iterationVariableName":""}
+{"testCaseName":"Test Cases/Delete User/Positive/TC1_Positive_Delete User Data","testCaseId":"Test Cases/Delete User/Positive/TC1_Positive_Delete User Data","iterationVariableName":""}

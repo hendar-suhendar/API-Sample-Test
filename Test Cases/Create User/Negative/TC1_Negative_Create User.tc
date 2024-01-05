@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify create user email input has existed is fail</description>
+   <name>TC1_Negative_Create User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf05881b-02a8-4129-95f5-e770a2b501c8</testCaseGuid>
+</TestCaseEntity>

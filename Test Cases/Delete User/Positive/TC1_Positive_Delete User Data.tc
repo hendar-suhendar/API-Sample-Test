@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify delete user using ID input is successful</description>
+   <name>TC1_Positive_Delete User Data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7258796f-4d73-4cc8-86ec-afe20e07dcf6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8ec35f3a-a0a4-45fa-8f3c-f18b6991637d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8ec35f3a-a0a4-45fa-8f3c-f18b6991637d</id>
+      <masked>false</masked>
+      <name>User_ID</name>
+   </variable>
+</TestCaseEntity>
